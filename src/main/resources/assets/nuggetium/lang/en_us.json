@@ -1,0 +1,23 @@
+{
+  "item.nuggetium.nugget": "Nugget",
+
+  "item.nuggetium.nugget_cooked": "Chicken Nugget",
+
+  "item.nuggetium.starcat_pickaxe": "StarCat Pickaxe",
+  "item.nuggetium.terraclaw": "Terraclaw",
+  "item.nuggetium.nugscalibur": "Nugscalibur",
+  "item.nuggetium.clawtivator": "Clawtivator",
+  "item.nuggetium.pawerful_axe": "Pawerful Axe",
+
+  "item.nuggetium.nfc_bucket": "NFC Bucket",
+  "item.nuggetium.deep_fried_chestplate": "Deep Fried Chestplate",
+  "item.nuggetium.drumstick_trousers": "Drumstick Trousers",
+  "item.nuggetium.crispy_flip_flops": "Crispy Flip Flops",
+
+  "block.nuggetium.nugget_block": "Nugget Block",
+  "block.nuggetium.nugget_ore": "Nugget Ore",
+
+  "creativetab.nuggetium.nugget_tab": "Nugget Items",
+  "creativetab.nuggetium.nugget_blocks_tab": "Nugget Blocks"
+
+}

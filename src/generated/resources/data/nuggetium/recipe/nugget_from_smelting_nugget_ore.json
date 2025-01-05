@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "nugget",
+  "ingredient": {
+    "item": "nuggetium:nugget_ore"
+  },
+  "result": {
+    "id": "nuggetium:nugget"
+  }
+}

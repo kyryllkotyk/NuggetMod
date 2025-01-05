@@ -1,0 +1,7 @@
+// 1.21.1	2025-01-04T22:44:28.9235507	Block States: nuggetium
+137ef47c518b0d9f363db99dd550b9b096b51d43 assets/nuggetium/blockstates/nugget_block.json
+dcef1d20989ca3544eecdea638f4434784ca273a assets/nuggetium/blockstates/nugget_ore.json
+8f68a9e190e56ebe531da37dc2ecdd9c2f61b96f assets/nuggetium/models/block/nugget_block.json
+076a89faac003476fb8cb3911c43b5be24e5242b assets/nuggetium/models/block/nugget_ore.json
+36b7f93d3ce58766c29fed7af05e723cd3632bd6 assets/nuggetium/models/item/nugget_block.json
+df333a2588d7fc9a83cfb524af0dd861752d8928 assets/nuggetium/models/item/nugget_ore.json
