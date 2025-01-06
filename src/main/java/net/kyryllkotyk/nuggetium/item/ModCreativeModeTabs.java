@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.NUGGET.get());
                         output.accept(ModItems.NUGGET_COOKED.get());
 
+                        output.accept(ModItems.CATACLYSM.get());
+
                         output.accept(ModItems.NUGSCALIBUR.get());
                         output.accept(ModItems.STARCAT_PICKAXE.get());
                         output.accept(ModItems.TERRACLAW.get());

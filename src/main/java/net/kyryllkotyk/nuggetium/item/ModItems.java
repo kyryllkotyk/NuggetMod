@@ -1,6 +1,7 @@
 package net.kyryllkotyk.nuggetium.item;
 
 import net.kyryllkotyk.nuggetium.Nuggetium;
+import net.kyryllkotyk.nuggetium.item.custom.ModArmorItem;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +18,8 @@ public class ModItems {
     public static final RegistryObject<Item> NUGGET_COOKED = ITEMS.register("nugget_cooked",
             () -> new Item(new Item.Properties().food(ModFoodProperties.NUGGET_COOKED)));
 
+    public static final RegistryObject<Item> CATACLYSM = ITEMS.register("cataclysm",
+            () -> new BowItem(new Item.Properties().durability(2500)));
 
     public static final RegistryObject<Item> NUGSCALIBUR = ITEMS.register("nugscalibur",
             () -> new SwordItem(ModToolTiers.NUGGET, new Item.Properties()
@@ -35,17 +38,17 @@ public class ModItems {
                     .attributes(HoeItem.createAttributes(ModToolTiers.NUGGET, 0, -3.0f))));
 
     public static final RegistryObject<Item> NFC_BUCKET = ITEMS.register("nfc_bucket",
-            () -> new ArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(50))));
     public static final RegistryObject<Item> DEEP_FRIED_CHESTPLATE = ITEMS.register("deep_fried_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(50))));
+            () -> new ArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(50))));
     public static final RegistryObject<Item> DRUMSTICK_TROUSERS = ITEMS.register("drumstick_trousers",
-            () -> new ArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(50))));
+            () -> new ArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(50))));
     public static final RegistryObject<Item> CRISPY_FLIP_FLOPS = ITEMS.register("crispy_flip_flops",
-            () -> new ArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(50))));
+            () -> new ArmorItem(ModArmorMaterials.NUGGET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(50))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
