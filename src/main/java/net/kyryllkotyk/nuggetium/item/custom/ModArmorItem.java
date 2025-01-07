@@ -19,26 +19,26 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.NUGGET_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.JUMP, 100, 4, false, false),
-                                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 4, false, false),
-                                    new MobEffectInstance(MobEffects.GLOWING, 100, 1, false, false),
-                                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 100, 5, false, false),
-                                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 100, 1, false, false),
-                                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 2, false, false),
-                                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 3, false, false),
-                                    new MobEffectInstance(MobEffects.DIG_SPEED, 100, 4, false, false),
-                                    new MobEffectInstance(MobEffects.WATER_BREATHING, 100, 5, false, false)))
+                            List.of(new MobEffectInstance(MobEffects.JUMP, 200, 4, false, false),
+                                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4, false, false),
+                                    new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 200, 5, false, false),
+                                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 2, false, false),
+                                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 3, false, false),
+                                    new MobEffectInstance(MobEffects.DIG_SPEED, 200, 4, false, false),
+                                    new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 5, false, false)))
                     .build();
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP_2 =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.NUGGET_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.JUMP, 100, 2, false, false),
-                                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 2, false, false),
-                                    new MobEffectInstance(MobEffects.GLOWING, 100, 1, false, false),
-                                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 100, 2, false, false),
-                                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 100, 1, false, false),
-                                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 1, false, false),
-                                    new MobEffectInstance(MobEffects.DIG_SPEED, 100, 2, false, false)))
+                            List.of(new MobEffectInstance(MobEffects.JUMP, 200, 2, false, false),
+                                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2, false, false),
+                                    new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 200, 2, false, false),
+                                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.DIG_SPEED, 200, 2, false, false)))
                     .build();
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {

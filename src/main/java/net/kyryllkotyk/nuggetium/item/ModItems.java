@@ -2,6 +2,7 @@ package net.kyryllkotyk.nuggetium.item;
 
 import net.kyryllkotyk.nuggetium.Nuggetium;
 import net.kyryllkotyk.nuggetium.item.custom.ModArmorItem;
+import net.kyryllkotyk.nuggetium.item.custom.ModBowItem;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,7 +20,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.NUGGET_COOKED)));
 
     public static final RegistryObject<Item> CATACLYSM = ITEMS.register("cataclysm",
-            () -> new BowItem(new Item.Properties().durability(2500)));
+            () -> new ModBowItem(new Item.Properties().durability(2500)));
 
     public static final RegistryObject<Item> NUGSCALIBUR = ITEMS.register("nugscalibur",
             () -> new SwordItem(ModToolTiers.NUGGET, new Item.Properties()

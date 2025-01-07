@@ -1,0 +1,6 @@
+{
+  "parent": "nuggetium:item/cataclysm",
+  "textures": {
+    "layer0": "nuggetium:item/cataclysm_pulling_0"
+  }
+}
