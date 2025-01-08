@@ -1,11 +1,13 @@
 package net.kyryllkotyk.nuggetium.item.custom;
 
 import net.kyryllkotyk.nuggetium.item.ModItems;
+import net.kyryllkotyk.nuggetium.registry.ModEffects;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.item.BowItem;
@@ -17,10 +19,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraftforge.event.ForgeEventFactory;
 
-import javax.annotation.Nullable;
-import java.util.Arrays;
-import java.util.List;
-
 public class ModBowItem extends BowItem {
     public ModBowItem(Properties properties) {
         super(properties);
@@ -28,8 +26,17 @@ public class ModBowItem extends BowItem {
 
     @Override
     public AbstractArrow customArrow(AbstractArrow arrow) {
-        arrow.setBaseDamage(arrow.getBaseDamage() * 10.0);
+        arrow.setBaseDamage(arrow.getBaseDamage() * 2.0);
+        arrow.addTag("nugget_arrow");
+        arrow.setNoGravity(true);
+        arrow.setInvulnerable(true);
         return arrow;
+    }
+
+    public static void onArrowHit(AbstractArrow arrow, Entity entity){
+        if(arrow.getTags().contains("nugget_arrow") && entity instanceof LivingEntity livingTarget){
+            livingTarget.addEffect(new MobEffectInstance(ModEffects.RAPID_FIRE.getHolder().get(), 100, 0));
+        }
     }
 
     @Override
@@ -53,7 +60,7 @@ public class ModBowItem extends BowItem {
                                     player.getXRot() + (pLevel.getRandom().nextFloat() - 0.5F) * 10,
                                     player.getYRot() + (pLevel.getRandom().nextFloat() - 0.5F) * 10,
                                     0.0F,
-                                    f * 3.0F,
+                                    f * 10.0F,
                                     1.0F);
 
                             if (f == 1.0F) {
@@ -80,11 +87,12 @@ public class ModBowItem extends BowItem {
         }
     }
 
-    @Override
-    public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
-        if(!stack.is(ModItems.CATACLYSM.get())){
-            return false;
-        }
-        player.
-    }
+//SHORTBOW: IMPLEMENT LATER
+//    @Override
+//    public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
+//        if(!stack.is(ModItems.CATACLYSM.get())){
+//            return false;
+//        }
+//        player.
+//    }
 }

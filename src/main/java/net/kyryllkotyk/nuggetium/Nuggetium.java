@@ -6,6 +6,7 @@ import net.kyryllkotyk.nuggetium.component.ModDataComponentTypes;
 import net.kyryllkotyk.nuggetium.item.ModCreativeModeTabs;
 import net.kyryllkotyk.nuggetium.item.ModItems;
 import net.kyryllkotyk.nuggetium.util.ModItemProperties;
+import net.kyryllkotyk.nuggetium.registry.ModEffects;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -41,6 +42,7 @@ public class Nuggetium {
         ModBlocks.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
