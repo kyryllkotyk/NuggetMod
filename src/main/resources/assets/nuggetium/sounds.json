@@ -1,0 +1,39 @@
+{
+  "arrow_shoot": {
+    "subtitle": "sounds.nuggetium.arrow_shoot",
+    "sounds": [
+      "nuggetium:arrow_shoot"
+    ]
+  },
+
+  "nugget_block_break": {
+    "subtitle": "sounds.nuggetium.arrow_shoot",
+    "sounds": [
+      "nuggetium:nugget_block_break"
+    ]
+  },
+  "nugget_block_step": {
+    "subtitle": "sounds.nuggetium.arrow_shoot",
+    "sounds": [
+      "nuggetium:nugget_block_step"
+    ]
+  },
+  "nugget_block_place": {
+    "subtitle": "sounds.nuggetium.arrow_shoot",
+    "sounds": [
+      "nuggetium:nugget_block_place"
+    ]
+  },
+  "nugget_block_hit": {
+    "subtitle": "sounds.nuggetium.arrow_shoot",
+    "sounds": [
+      "nuggetium:nugget_block_hit"
+    ]
+  },
+  "nugget_block_fall": {
+    "subtitle": "sounds.nuggetium.arrow_shoot",
+    "sounds": [
+      "nuggetium:nugget_block_fall"
+    ]
+  }
+}

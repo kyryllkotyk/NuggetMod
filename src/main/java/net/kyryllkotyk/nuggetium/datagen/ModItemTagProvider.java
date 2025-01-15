@@ -31,5 +31,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
             .add(ModItems.DEEP_FRIED_CHESTPLATE.get())
             .add(ModItems.DRUMSTICK_TROUSERS.get())
             .add(ModItems.CRISPY_FLIP_FLOPS.get());
+
+        tag(ItemTags.MINING_ENCHANTABLE)
+                .add(ModItems.STARCAT_PICKAXE.get());
     }
 }

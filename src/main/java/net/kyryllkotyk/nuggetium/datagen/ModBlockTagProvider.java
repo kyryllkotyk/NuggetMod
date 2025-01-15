@@ -29,7 +29,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.NUGGET_ORE.get());
 
         tag(ModTags.Blocks.NEEDS_NUGGET_TOOL)
-                .addTag(BlockTags.NEEDS_IRON_TOOL);
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_NUGGET_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)

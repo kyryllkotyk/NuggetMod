@@ -1,6 +1,6 @@
 {
   "remove": [
-    "#nuggetium:needs_alexandrite_tool"
+    "#nuggetium:needs_nugget_tool"
   ],
   "values": [
     "#minecraft:incorrect_for_iron_tool"

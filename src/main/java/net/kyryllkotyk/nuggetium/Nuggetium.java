@@ -5,6 +5,7 @@ import net.kyryllkotyk.nuggetium.block.ModBlocks;
 import net.kyryllkotyk.nuggetium.component.ModDataComponentTypes;
 import net.kyryllkotyk.nuggetium.item.ModCreativeModeTabs;
 import net.kyryllkotyk.nuggetium.item.ModItems;
+import net.kyryllkotyk.nuggetium.sound.ModSounds;
 import net.kyryllkotyk.nuggetium.util.ModItemProperties;
 import net.kyryllkotyk.nuggetium.registry.ModEffects;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -43,7 +44,7 @@ public class Nuggetium {
 
         ModDataComponentTypes.register(modEventBus);
         ModEffects.register(modEventBus);
-
+        ModSounds.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us

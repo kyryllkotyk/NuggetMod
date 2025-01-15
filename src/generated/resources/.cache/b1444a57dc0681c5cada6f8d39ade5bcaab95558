@@ -1,5 +1,5 @@
-// 1.21.1	2025-01-04T22:44:28.9245509	Tags for minecraft:block mod id nuggetium
+// 1.21.1	2025-01-14T22:27:41.5388068	Tags for minecraft:block mod id nuggetium
 4292bef05c7ac702e76f5374cc7632ceccc2993f data/minecraft/tags/block/mineable/pickaxe.json
 4292bef05c7ac702e76f5374cc7632ceccc2993f data/minecraft/tags/block/needs_diamond_tool.json
-9d84ea080c90acf460e1edfd93a517f5a90e3f91 data/nuggetium/tags/block/incorrect_for_alexandrite_tool.json
-32b13946c4cd1f944b029659ccce5fcb2adad4ff data/nuggetium/tags/block/needs_alexandrite_tool.json
+2397f7257a37a6adf0ccdbf683075518e896ae3f data/nuggetium/tags/block/incorrect_for_nugget_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/nuggetium/tags/block/needs_nugget_tool.json

@@ -2,6 +2,7 @@ package net.kyryllkotyk.nuggetium.item.custom;
 
 import net.kyryllkotyk.nuggetium.item.ModItems;
 import net.kyryllkotyk.nuggetium.registry.ModEffects;
+import net.kyryllkotyk.nuggetium.sound.ModSounds;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -28,8 +29,9 @@ public class ModBowItem extends BowItem {
     public AbstractArrow customArrow(AbstractArrow arrow) {
         arrow.setBaseDamage(arrow.getBaseDamage() * 2.0);
         arrow.addTag("nugget_arrow");
-        arrow.setNoGravity(true);
+       // arrow.setNoGravity(true);
         arrow.setInvulnerable(true);
+        arrow.setSilent(true);
         return arrow;
     }
 
@@ -57,10 +59,10 @@ public class ModBowItem extends BowItem {
                             arrow = this.customArrow(arrow);
                             // Add random spread to each arrow
                             arrow.shootFromRotation(player,
-                                    player.getXRot() + (pLevel.getRandom().nextFloat() - 0.5F) * 10,
-                                    player.getYRot() + (pLevel.getRandom().nextFloat() - 0.5F) * 10,
+                                    player.getXRot() + (pLevel.getRandom().nextFloat() - 0.5F) * 3,
+                                    player.getYRot() + (pLevel.getRandom().nextFloat() - 0.5F) * 3,
                                     0.0F,
-                                    f * 10.0F,
+                                    f * 1000.0F,
                                     1.0F);
 
                             if (f == 1.0F) {
@@ -74,7 +76,7 @@ public class ModBowItem extends BowItem {
                     }
 
                     pLevel.playSound(null, player.getX(), player.getY(), player.getZ(),
-                            SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F,
+                            ModSounds.ARROW_SHOOT.get(), SoundSource.PLAYERS, 2.0F,
                             1.0F / (pLevel.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
 
                     if (itemstack.isEmpty()) {
