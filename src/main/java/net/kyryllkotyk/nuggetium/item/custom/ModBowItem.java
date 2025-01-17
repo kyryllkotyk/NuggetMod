@@ -32,6 +32,7 @@ public class ModBowItem extends BowItem {
        // arrow.setNoGravity(true);
         arrow.setInvulnerable(true);
         arrow.setSilent(true);
+        arrow.setInvisible(true);
         return arrow;
     }
 
